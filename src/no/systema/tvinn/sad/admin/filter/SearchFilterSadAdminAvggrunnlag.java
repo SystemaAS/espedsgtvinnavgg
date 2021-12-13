@@ -8,7 +8,7 @@ import java.util.*;
 
 import no.systema.main.util.MainDateFormatter;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 /**
  * 
@@ -16,7 +16,7 @@ import org.apache.log4j.Logger;
  * @date 	Sep 15, 2016
  */
 public class SearchFilterSadAdminAvggrunnlag {
-	private static final Logger logger = Logger.getLogger(SearchFilterSadAdminAvggrunnlag.class.getName());
+	private static final Logger logger = LogManager.getLogger(SearchFilterSadAdminAvggrunnlag.class.getName());
 	protected MainDateFormatter dateFormatter = new MainDateFormatter();
 	
 	private String fromDate = null;
